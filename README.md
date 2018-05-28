@@ -1,8 +1,8 @@
 # The-Web-Developer-Bootcamp
 Here I will include all the content I've learned in this online bootcamp
 
-<li> Section 3/4: Introduction to HTML / Intermediate HTML </li>
-<li> Section 5/6: Introduction to CSS / Intermediate CSS </li>
+<li> Section 3,4: Introduction to HTML & Intermediate HTML </li>
+<li> Section 5,6: Introduction to CSS & Intermediate CSS </li>
 <li> Section 7: Bootstrap </li>
 <li> Section 8: Introduction to JavaScript </li>
 <li> Section 9: Javascript Basics: Control Flow </li>
@@ -12,7 +12,7 @@ Here I will include all the content I've learned in this online bootcamp
 <li> Section 13: DOM Manipulation </li>
 <li> Section 14: Advanced DOM Manipulation </li>
 <li> Section 15: Color Game Project </li>
-<li> Section 16/17: Intro to jQuery / Advanced jQuery </li>
+<li> Section 16,17: Intro to jQuery & Advanced jQuery </li>
 <li> Section 18: Todo List Projects  </li>
 <li> Section 19: OPTIONAL Project: Patatap Clone </li>
 <li> Section 20: Backend Basics </li>
