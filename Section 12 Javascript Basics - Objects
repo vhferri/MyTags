@@ -1,0 +1,78 @@
+var dogs = ["Rusty", "Lucky", "Bubba"]
+
+dog[1] //"Lucky"
+
+
+
+var dog = {
+	name: "Bubba"
+	bread: "Lab"
+}
+
+dog["name"] // "Bubba"
+dog.name // "Bubba"
+
+dog.age = 6 //add age at the object
+dog.age =+ 1 // age now will be 7
+
+
+var posts = [
+	{
+		title: "Cats are mediocre",
+		author: "Colt",
+		comments: ["Awesome post", "Terrible post"]
+	},
+
+	{
+		title: "Cats are actually awesome",
+		author: "Cats luvr",
+		comments: ["<3", "Go to hell"]
+	}
+]
+
+
+
+var movies = [
+	{
+		title: "As trancas do Rei Careca",
+		hasWatched: true,
+		rating: 5,
+	},
+	{
+		title: "A ventania",
+		hasWatched: false,
+		rating: 3,
+	}
+]
+
+movies.forEach(function(movie){
+	var result = "You have ";
+	if (movie.hasWatched){
+		result += "watched";
+	} else {
+		result += "not seen ";
+	}
+	result += "\"" + movie.title + "\" - ";
+	result += movie.rating + " stars"
+	console.log(result)
+
+})
+
+//or
+
+function buildString(movie){
+	var result = "You have ";
+	if (movie.hasWatched){
+		result += "watched";
+	} else {
+		result += "not seen ";
+	}
+	result += "\"" + movie.title + "\" - ";
+	result += movie.rating + " stars"
+	return result;
+}
+
+movies.forEach(function(movie){
+	console.log (buildString(movie));
+});
+
