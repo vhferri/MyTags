@@ -1,3 +1,5 @@
+TODO LIST
+
 var todos = []
 
 var input = prompt("What would you like to do?");
@@ -39,4 +41,97 @@ function deleteTodo(){
 	//delete that todo
 	todos.splice(index, 1);
 	console.log("Deleted todo");
+}
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+//printReverse
+
+function printReverse(arr){
+	for(var i = arr.length - 1; i>= 0; i--){
+		console.log(arr[i]);
+	}
+}
+
+printReverse([3,6,2,5])
+
+//OR
+
+var print =	[1,2,3,4,5];
+
+var printReversed = print.reverse();
+
+printReversed.forEach (function(num){
+	console.log(num);
+});
+
+
+//isUniform
+
+function isUniform(arr){
+	var fisrt = arr[0];
+	for (var i = 0; i < arr.length; i++){
+		if(arr[i] !== fisrt){
+			return false
+		}
+	}
+	return true
+}
+
+isUniform ([1,1,1,1])
+
+
+
+
+
+//sumArray
+
+function sumArray(arr){
+	var total = 0;
+	arr.forEach(function(element){
+		total += element;
+	});
+	return total;
+}
+
+sumArray([3,3,3])
+
+
+//maxArray
+
+function max(arr){
+	var max = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if (arr[i] > max){
+			max = arr[i];	
+		}
+	}
+	return max;
+}
+
+max([1,2,3,4,20,1])
+
+
+//---------------------------------------------------
+//ARRAY ITERATION
+
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+
+numbers.forEach(function(color)){
+	if(color % 3 === 0){
+		console.log(color);
+	}
+}
+
+//----------------------------------------------------
+//SAME RESULTS OF ARRAY ITERRATION WITH A FOR LOOP (EXERCISE)
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+
+for (var i = 0; i < numbers.length; i++){
+	if (i % 3 === 0) {
+		console.log(i);
+	}
 }
