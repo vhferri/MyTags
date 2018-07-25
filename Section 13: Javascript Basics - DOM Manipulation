@@ -1,1 +1,34 @@
+>>HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>domManipulation</title>
+
+
+</head>
+<body>
+
+	<button>CLICK HERE!</button>
+
+	<h1>I am an h1!</h1>
+	<p id="first" class="special">Hello!</p>
+	<p class="special">Goodbye</p>
+	<p>Hi again</p>
+	<p id="last">Goodbye again</p>
+
+<script type="text/javascript" src="domManipulation.js"></script>
+
+</body>
+</html>
+
+
+>>JS
+
+var button = document.querySelector("button");
+
+button.addEventListener("click", function(){
+		document.body.classList.toggle("purple");
+});
+
 
