@@ -1,3 +1,26 @@
+>>HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TicTacToe</title>
+	<link rel="stylesheet" type="text/css" href="ScoreKeeper.css">
+</head>
+<body>
+<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+
+<p>Playing to: 5</p>
+
+<input type="number">
+<button id="p1">Player One</button>
+<button id="p2">Player Two</button>
+<button id="reset">Reset</button>
+
+
+>>JS
+<script type="text/javascript" src="ScoreKeeper.js"></script>
+</body>
+</html>
+
 var p1Button = document.getElementById("p1");
 var p2Button = document.getElementById("p2");
 var p1Display = document.querySelector("#p1Display")
@@ -37,3 +60,8 @@ p2Button.addEventListener("click", function(){
 resetButton.addEventListener("click", function(){
 	alert("CLICKED")
 })
+
+>>CSS
+.winner{
+	color: green;
+}
