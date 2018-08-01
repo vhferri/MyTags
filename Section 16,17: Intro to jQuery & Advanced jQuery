@@ -25,3 +25,98 @@ $("div#third").css("border", "2px solid orange");
 $("div:first-of-type").css("color", "pink");
 //OR
 $("div").first().css("color", "pink");
+
+//NEW HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Methods</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<style type="text/css">
+		.correct{
+			color: green;
+		}	
+
+		.wrong{
+			color: red;
+			background: pink;
+		}
+
+		.done{
+			color: gray;
+			text-decoration: line-through;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<h1>jQuery Methods Demo Page</h1>
+
+<input type="text" placeholder="Your Name">
+
+<select>
+	<option>Ostrich</option>
+	<option>Turtle</option>
+	<option>Toad</option>
+</select>
+
+<ul>
+	<li>Skittles</li>
+	<li>Starburst</li>
+	<li>Twix</li>
+</ul>
+
+<p>OLD PARAGRAPHS</p>
+<p>OLD PARAGRAPHS</p>
+
+<img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+<img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+<img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+
+	<script type="text/javascript" src="jQuery Method.js"></script>
+</body>
+</html>
+
+//JS
+// Objectives
+// text()
+// html()
+// attr()
+// val()
+// addClass()
+// removeClass()
+// toggleClass()
+
+
+//attr - give only 1 argument like SRC, it will return the value of it, and if you pass the 2nd argument, you will substitute it
+
+$("img").css("width", "200px");
+
+$("img").first().attr("src", "https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg");
+
+$("img").last().attr("src", "https://www.rd.com/wp-content/uploads/2018/02/19_Adorable-Puppy-Pictures-that-Will-Make-You-Melt_391191067_chris_tina-760x506.jpg");
+
+//val -
+
+$("input").val(""); // clean up the value inserted in the browser
+
+
+// text()
+$("p" ).text("NEW PARAGRAPHS")
+
+// html()
+$("p" ).last().html("<p>NEW PARAGRAPH CHANGED BY HTML</p>")
+
+// addClass()
+$("h1").addClass("correct")
+
+// removeClass()
+$("h1").removeClass("correct")
+
+// toggleClass() - if there's no class it will include, if the class exist in this li it will be removed
+$("li").first().toggleClass("done")
+$("li").toggleClass("done")
+
