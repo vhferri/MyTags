@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDoList</title>
+	<link rel="stylesheet" type="text/css" href="ToDoList.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div id="container">
+		<h1>To-Do List</h1>
+		<input type="text">
+
+		<ul>
+			<li> <span>X</span> Go to Potions Class</li>
+			<li> <span>X</span> Buy new robes</li>
+			<li> <span>X</span> Visit Hagrid</li>
+		</ul>
+
+	</div>
+
+	<script type="text/javascript" src="ToDoList.js"></script>
+</body>
+</html>
+
+
+//CSS
+#container{
+	border: 2px solid gray;
+	width: 360px;
+	margin: 0 auto;
+}
+
+.completed{
+	color:gray;
+	text-decoration: line-through;
+}
+
+
+//JS
+// //check off specif todos by clicking
+// $("li").click(function(){
+// 	//if li is gray
+// 	if($(this).css("color") === "rgb(128, 128, 128)"){
+		
+// 			//turn black
+// 		$(this).css({
+// 			color:"black",
+// 			textDecoration: "none",
+// 			});
+// 	}
+
+// 	//else
+// 	else {
+// 		//turn it gray
+// 		$(this).css({
+// 			color: "gray",
+// 			textDecoration: "line-through",
+// 		});
+// 	}
+// });
+
+
+$("li").click(function(){
+	$(this).toggleClass("completed");
+});
